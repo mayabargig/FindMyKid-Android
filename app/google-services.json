@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "746024316770",
+    "project_id": "where-is-my-child-app-3be81",
+    "storage_bucket": "where-is-my-child-app-3be81.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746024316770:android:81fc94163f341e74a7c63b",
+        "android_client_info": {
+          "package_name": "com.example.whereismychildapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_lZhU668EDLVPBN2FnCnWyHQsQJHWL7I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

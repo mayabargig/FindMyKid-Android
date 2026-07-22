@@ -1,0 +1,26 @@
+# Gradle / build
+.gradle/
+build/
+**/build/
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+/out/
+
+# Local config (never commit)
+local.properties
+
+# Logs / temp
+*.log
+.DS_Store
+Thumbs.db
+
+# Native build
+.externalNativeBuild/
+.cxx/
+
+# Captures
+captures/

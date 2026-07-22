@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/fragment_home">
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.example.whereismychildapp.fragment_home"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/fragment_login"
+        android:name="com.example.whereismychildapp.fragment_login"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_fragment_login_to_fragment_register"
+            app:destination="@id/fragment_register" />
+        <action
+            android:id="@+id/action_fragment_login_to_fragment_profile"
+            app:destination="@id/fragment_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_profile"
+        android:name="com.example.whereismychildapp.fragment_profile"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/fragment_register"
+        android:name="com.example.whereismychildapp.fragment_register"
+        android:label="Register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_fragment_register_to_fragment_login"
+            app:destination="@id/fragment_login" />
+        <action
+            android:id="@+id/action_fragment_register_to_fragment_profile"
+            app:destination="@id/fragment_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_parentMap"
+        android:name="com.example.whereismychildapp.fragment_parentMap"
+        android:label="fragment_parentmap"
+        tools:layout="@layout/fragment_parentmap" >
+
+        <!-- עבור שירות התראה של SOS להורה -->
+
+        <argument
+            android:name="childUid"
+            app:argType="string"
+            android:defaultValue="" />
+
+        <argument
+            android:name="requestId"
+            app:argType="string"
+            android:defaultValue="" />
+
+        <argument
+            android:name="lat"
+            app:argType="float"
+            android:defaultValue="0.0" />
+
+        <argument
+            android:name="lng"
+            app:argType="float"
+            android:defaultValue="0.0" />
+
+        <action
+            android:id="@+id/action_fragment_parentMap_to_fragment_profile"
+            app:destination="@id/fragment_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_select_child"
+        android:name="com.example.whereismychildapp.fragment_select_child"
+        android:label="fragment_select_child"
+        tools:layout="@layout/fragment_select_child" >
+        <action
+            android:id="@+id/action_fragment_select_child_to_fragment_profile"
+            app:destination="@id/fragment_profile" />
+        <action
+            android:id="@+id/action_fragment_select_child_to_fragment_profile2"
+            app:destination="@id/fragment_profile" />
+        <action
+            android:id="@+id/action_fragment_select_child_to_fragment_profile3"
+            app:destination="@id/fragment_profile" />
+    </fragment>
+
+</navigation>
